@@ -21,6 +21,7 @@ public class Delivery {
     public void onPostPersist(){
         DeliveryStarted deliveryStarted = new DeliveryStarted();
         BeanUtils.copyProperties(this, deliveryStarted);
+        System.out.println("\n\n================================ DELIVERY POSTPERSIST ================================\n\n");
         deliveryStarted.publishAfterCommit();
 
     }
@@ -28,8 +29,8 @@ public class Delivery {
     public void onPreRemove(){
         DeliveryCancelled deliveryCancelled = new DeliveryCancelled();
         BeanUtils.copyProperties(this, deliveryCancelled);
+        System.out.println("\n\n================================ DELIVERY PREREMOVE ================================\n\n");
         deliveryCancelled.publishAfterCommit();
-
     }
 
     public Long getId() {

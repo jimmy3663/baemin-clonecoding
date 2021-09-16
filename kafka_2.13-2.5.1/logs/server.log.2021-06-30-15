@@ -1,0 +1,6 @@
+[2021-07-01 07:45:05,459] WARN Client session timed out, have not heard from server in 12384ms for sessionid 0x1001597b1ff0000 (org.apache.zookeeper.ClientCnxn)
+[2021-07-01 07:45:05,896] INFO Client session timed out, have not heard from server in 12384ms for sessionid 0x1001597b1ff0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2021-07-01 07:45:05,992] INFO [GroupCoordinator 0]: Preparing to rebalance group myGroup in state PreparingRebalance with old generation 6 (__consumer_offsets-17) (reason: Adding new member rdkafka-02bac1a7-8088-4e60-ab77-cd420ced7546 with group instance id None) (kafka.coordinator.group.GroupCoordinator)
+[2021-07-01 07:45:07,818] INFO Opening socket connection to server localhost/[0:0:0:0:0:0:0:1]:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2021-07-01 07:45:07,820] INFO Socket connection established, initiating session, client: /[0:0:0:0:0:0:0:1]:53409, server: localhost/[0:0:0:0:0:0:0:1]:2181 (org.apache.zookeeper.ClientCnxn)
+[2021-07-01 07:45:07,837] INFO Session establishment complete on server localhost/[0:0:0:0:0:0:0:1]:2181, sessionid = 0x1001597b1ff0000, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)

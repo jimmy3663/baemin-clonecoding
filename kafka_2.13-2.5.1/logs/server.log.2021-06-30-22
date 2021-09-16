@@ -1,0 +1,3 @@
+[2021-06-30 22:52:03,356] INFO [GroupCoordinator 0]: Member rdkafka-50b21c03-9c5f-4b4e-8b4d-a3488ab6a4a5 in group myGroup has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2021-06-30 22:52:03,357] INFO [GroupCoordinator 0]: Stabilized group myGroup generation 6 (__consumer_offsets-17) (kafka.coordinator.group.GroupCoordinator)
+[2021-06-30 22:52:03,358] INFO [GroupCoordinator 0]: Assignment received from leader for group myGroup for generation 6 (kafka.coordinator.group.GroupCoordinator)

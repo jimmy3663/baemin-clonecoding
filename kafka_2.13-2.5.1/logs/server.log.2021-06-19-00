@@ -1,0 +1,5 @@
+[2021-06-19 08:50:29,184] WARN Client session timed out, have not heard from server in 12007ms for sessionid 0x10005e308a00002 (org.apache.zookeeper.ClientCnxn)
+[2021-06-19 08:50:29,585] INFO Client session timed out, have not heard from server in 12007ms for sessionid 0x10005e308a00002, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2021-06-19 08:50:30,864] INFO Opening socket connection to server localhost/[0:0:0:0:0:0:0:1]:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2021-06-19 08:50:30,868] INFO Socket connection established, initiating session, client: /[0:0:0:0:0:0:0:1]:52112, server: localhost/[0:0:0:0:0:0:0:1]:2181 (org.apache.zookeeper.ClientCnxn)
+[2021-06-19 08:50:30,890] INFO Session establishment complete on server localhost/[0:0:0:0:0:0:0:1]:2181, sessionid = 0x10005e308a00002, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)

@@ -1,0 +1,8 @@
+[2021-07-09 18:08:25,283] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-07-09 18:18:25,282] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-07-09 18:28:25,281] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-07-09 18:29:50,283] INFO [GroupCoordinator 0]: Member rdkafka-d600a0d8-067b-432a-be0c-f5213e329baf in group delivery has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2021-07-09 18:29:50,283] INFO [GroupCoordinator 0]: Preparing to rebalance group delivery in state PreparingRebalance with old generation 15 (__consumer_offsets-46) (reason: removing member rdkafka-d600a0d8-067b-432a-be0c-f5213e329baf on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2021-07-09 18:29:50,284] INFO [GroupCoordinator 0]: Group delivery with generation 16 is now empty (__consumer_offsets-46) (kafka.coordinator.group.GroupCoordinator)
+[2021-07-09 18:38:25,281] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-07-09 18:48:25,282] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

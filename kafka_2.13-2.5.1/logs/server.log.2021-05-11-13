@@ -1,0 +1,7 @@
+[2021-05-11 13:05:44,130] INFO [GroupCoordinator 0]: Member consumer-console-consumer-49557-1-6ec0c164-7e3e-4b02-9a53-573b3f367974 in group console-consumer-49557 has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2021-05-11 13:05:44,138] INFO [GroupCoordinator 0]: Preparing to rebalance group console-consumer-49557 in state PreparingRebalance with old generation 1 (__consumer_offsets-11) (reason: removing member consumer-console-consumer-49557-1-6ec0c164-7e3e-4b02-9a53-573b3f367974 on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2021-05-11 13:05:44,138] INFO [GroupCoordinator 0]: Group console-consumer-49557 with generation 2 is now empty (__consumer_offsets-11) (kafka.coordinator.group.GroupCoordinator)
+[2021-05-11 13:31:38,241] INFO [GroupMetadataManager brokerId=0] Group console-consumer-49557 transitioned to Dead in generation 2 (kafka.coordinator.group.GroupMetadataManager)
+[2021-05-11 13:31:38,248] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 7 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-05-11 13:41:38,246] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-05-11 13:51:38,255] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

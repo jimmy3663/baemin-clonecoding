@@ -19,11 +19,10 @@ public class PolicyHandler{
 
         System.out.println("\n\n##### listener UpdateStatus : " + deliveryStarted.toJson() + "\n\n");
 
-
-
-        // Sample Logic //
-        // Order order = new Order();
-        // orderRepository.save(order);
+        Order order = orderRepository.findById(deliveryStarted.getOrderId()).get();
+        order.setDeliveryStatus(deliveryStarted.getDeliveryStatus());
+        order.setDeliveryId(deliveryStarted.getId());
+        orderRepository.save(order);
 
     }
 

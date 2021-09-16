@@ -20,6 +20,15 @@ public class Order {
 
     @PostPersist
     public void onPostPersist(){
+
+//        baemin.external.Product product = new baemin.external.Product();
+        // mappings goes here
+        baemin.external.Product product = OrderApplication.applicationContext.getBean(baemin.external.ProductService.class)
+                .checkStock(this.productId);
+        System.out.println("\n\n================================ ORDER CHECKSTOCK ================================\n\n");
+        if(product.getStock()<this.qty)
+            return;
+        
         OrderPlaced orderPlaced = new OrderPlaced();
         BeanUtils.copyProperties(this, orderPlaced);
         orderPlaced.publishAfterCommit();
@@ -27,12 +36,11 @@ public class Order {
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
-        baemin.external.Product product = new baemin.external.Product();
-        // mappings goes here
-        Application.applicationContext.getBean(baemin.external.ProductService.class)
-            .checkStock(product);
+
 
     }
+
+
     @PreRemove
     public void onPreRemove(){
         OrderCancelled orderCancelled = new OrderCancelled();
@@ -44,8 +52,10 @@ public class Order {
 
         baemin.external.Delivery delivery = new baemin.external.Delivery();
         // mappings goes here
-        Application.applicationContext.getBean(baemin.external.DeliveryService.class)
-            .cancelDelivery(delivery);
+//        OrderApplication.applicationContext.getBean(baemin.external.DeliveryService.class)
+//            .cancelDelivery(delivery);
+        OrderApplication.applicationContext.getBean(baemin.external.DeliveryService.class)
+                .cancelDelivery(this.deliveryId);
 
     }
 

@@ -1,0 +1,8 @@
+[2021-06-02 19:17:17,305] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-06-02 19:17:21,814] INFO [GroupCoordinator 0]: Member[group.instance.id None, member.id kafka-python-2.0.2-f44a0dd3-7b3b-44b8-80e9-c8d1c766a561] in group consumer-01 has left, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2021-06-02 19:17:21,814] INFO [GroupCoordinator 0]: Preparing to rebalance group consumer-01 in state PreparingRebalance with old generation 56 (__consumer_offsets-22) (reason: removing member kafka-python-2.0.2-f44a0dd3-7b3b-44b8-80e9-c8d1c766a561 on LeaveGroup) (kafka.coordinator.group.GroupCoordinator)
+[2021-06-02 19:17:21,814] INFO [GroupCoordinator 0]: Group consumer-01 with generation 57 is now empty (__consumer_offsets-22) (kafka.coordinator.group.GroupCoordinator)
+[2021-06-02 19:27:17,314] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-06-02 19:37:17,319] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-06-02 19:47:17,330] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-06-02 19:57:17,335] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

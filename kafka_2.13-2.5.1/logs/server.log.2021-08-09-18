@@ -1,0 +1,6 @@
+[2021-08-09 18:00:04,693] INFO [GroupCoordinator 0]: Member order-89fc2798-bed9-4824-a2f3-c4cfbb80f9bd in group order has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2021-08-09 18:00:04,701] INFO [GroupCoordinator 0]: Preparing to rebalance group order in state PreparingRebalance with old generation 202 (__consumer_offsets-0) (reason: removing member order-89fc2798-bed9-4824-a2f3-c4cfbb80f9bd on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2021-08-09 18:00:04,701] INFO [GroupCoordinator 0]: Group order with generation 203 is now empty (__consumer_offsets-0) (kafka.coordinator.group.GroupCoordinator)
+[2021-08-09 18:04:02,820] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-08-09 18:14:02,827] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-08-09 18:24:02,828] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

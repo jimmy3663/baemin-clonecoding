@@ -23,11 +23,20 @@ public class Product {
         productRegistered.publishAfterCommit();
 
     }
+
+    @PostLoad
+    public void onPostLoad(){
+        
+        System.out.println("\n\n================================ PRODUCT RESPONSESTOCK ================================\n\n");
+
+    }
+
     @PostUpdate
     public void onPostUpdate(){
         StockModified stockModified = new StockModified();
         BeanUtils.copyProperties(this, stockModified);
         stockModified.publishAfterCommit();
+
 
     }
 

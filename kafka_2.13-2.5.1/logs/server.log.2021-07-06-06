@@ -1,0 +1,1 @@
+[2021-07-06 06:55:20,491] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
