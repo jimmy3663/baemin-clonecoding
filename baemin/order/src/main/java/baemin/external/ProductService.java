@@ -13,6 +13,12 @@ public interface ProductService {
 
     @RequestMapping(method= RequestMethod.GET, path="/products/{Id}")
     public Product checkStock(@PathVariable Long Id);
-
+    
+    @RequestMapping(method= RequestMethod.DELETE, path="/products/{Id}")
+    public Product deleteProduct(@PathVariable Long Id);
+    
+    @RequestMapping(method= RequestMethod.POST, path="/products")
+    public void updateStock(@RequestBody Product product);
+    
 }
 

@@ -29,10 +29,17 @@ public class Order {
         if(product.getStock()<this.qty)
             return;
         
+        OrderApplication.applicationContext.getBean(baemin.external.ProductService.class)
+                .deleteProduct(this.productId);
+        
+        product.setStock(product.getStock()-this.qty);
+        OrderApplication.applicationContext.getBean(baemin.external.ProductService.class)
+                .updateStock(product);
+        
         OrderPlaced orderPlaced = new OrderPlaced();
         BeanUtils.copyProperties(this, orderPlaced);
         orderPlaced.publishAfterCommit();
-
+        
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
@@ -56,7 +63,7 @@ public class Order {
 //            .cancelDelivery(delivery);
         OrderApplication.applicationContext.getBean(baemin.external.DeliveryService.class)
                 .cancelDelivery(this.deliveryId);
-
+        System.out.println("\n\n=================================== ORDER CANCELED RESPONSE ===================================\n\n");
     }
 
     public Long getId() {

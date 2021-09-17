@@ -21,14 +21,16 @@ public class Product {
         ProductRegistered productRegistered = new ProductRegistered();
         BeanUtils.copyProperties(this, productRegistered);
         productRegistered.publishAfterCommit();
-
+        
     }
 
     @PostLoad
     public void onPostLoad(){
         
-        System.out.println("\n\n================================ PRODUCT RESPONSESTOCK ================================\n\n");
-
+        System.out.println("\n\n================================ PRODUCT POSTLOAD ================================\n\n");
+        
+        
+        
     }
 
     @PostUpdate

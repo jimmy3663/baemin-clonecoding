@@ -25,7 +25,9 @@ public class PolicyHandler{
         productRepository.save(product);
     }
 
-
+    
+    
+    
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString){}
 
