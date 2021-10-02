@@ -1,0 +1,6 @@
+[2021-06-30 19:27:06,359] INFO [GroupCoordinator 0]: Preparing to rebalance group myGroup in state PreparingRebalance with old generation 4 (__consumer_offsets-17) (reason: Adding new member rdkafka-50b21c03-9c5f-4b4e-8b4d-a3488ab6a4a5 with group instance id None) (kafka.coordinator.group.GroupCoordinator)
+[2021-06-30 19:27:06,362] INFO [GroupCoordinator 0]: Stabilized group myGroup generation 5 (__consumer_offsets-17) (kafka.coordinator.group.GroupCoordinator)
+[2021-06-30 19:27:06,363] INFO [GroupCoordinator 0]: Assignment received from leader for group myGroup for generation 5 (kafka.coordinator.group.GroupCoordinator)
+[2021-06-30 19:34:06,311] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-06-30 19:44:06,314] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-06-30 19:54:06,312] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

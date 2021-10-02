@@ -21,13 +21,24 @@ public class Product {
         ProductRegistered productRegistered = new ProductRegistered();
         BeanUtils.copyProperties(this, productRegistered);
         productRegistered.publishAfterCommit();
-
+        
     }
+
+    @PostLoad
+    public void onPostLoad(){
+        
+        System.out.println("\n\n================================ PRODUCT POSTLOAD ================================\n\n");
+        
+        
+        
+    }
+
     @PostUpdate
     public void onPostUpdate(){
         StockModified stockModified = new StockModified();
         BeanUtils.copyProperties(this, stockModified);
         stockModified.publishAfterCommit();
+
 
     }
 

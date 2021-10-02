@@ -1,0 +1,7 @@
+[2021-08-02 18:06:44,198] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-08-02 18:11:46,847] INFO [GroupCoordinator 0]: Member kafka-python-2.0.2-bfc82217-8497-4e44-b6e4-1d1f6cc618ea in group order has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2021-08-02 18:11:46,852] INFO [GroupCoordinator 0]: Preparing to rebalance group order in state PreparingRebalance with old generation 145 (__consumer_offsets-0) (reason: removing member kafka-python-2.0.2-bfc82217-8497-4e44-b6e4-1d1f6cc618ea on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2021-08-02 18:11:47,427] INFO [GroupCoordinator 0]: Member kafka-python-2.0.2-2ba9eaf3-4bac-4958-98b4-016952023a5d in group order has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2021-08-02 18:11:47,427] INFO [GroupCoordinator 0]: Group order with generation 146 is now empty (__consumer_offsets-0) (kafka.coordinator.group.GroupCoordinator)
+[2021-08-02 18:16:44,199] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-08-02 18:26:44,197] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

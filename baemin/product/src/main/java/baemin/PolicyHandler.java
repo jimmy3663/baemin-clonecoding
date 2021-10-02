@@ -19,15 +19,15 @@ public class PolicyHandler{
 
         System.out.println("\n\n##### listener IncreaseStock : " + orderCancelled.toJson() + "\n\n");
 
-
-
-        // Sample Logic //
-        // Product product = new Product();
-        // productRepository.save(product);
-
+        Product product = productRepository.findById(orderCancelled.getProductId()).get();
+        System.out.println("\n\n================================ INCREASE STOCK ================================\n\n");
+        product.setStock(product.getStock()+orderCancelled.getQty());
+        productRepository.save(product);
     }
 
-
+    
+    
+    
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString){}
 

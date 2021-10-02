@@ -1,0 +1,5 @@
+[2021-07-15 11:00:27,309] INFO [GroupMetadataManager brokerId=0] Group console-consumer-56460 transitioned to Dead in generation 4 (kafka.coordinator.group.GroupMetadataManager)
+[2021-07-15 11:00:27,329] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 23 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-07-15 11:10:27,310] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-07-15 11:20:27,311] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2021-07-15 11:30:27,313] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

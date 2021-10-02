@@ -1,0 +1,1 @@
+[2021-06-30 21:22:31,248] INFO [GroupCoordinator 0]: Preparing to rebalance group myGroup in state PreparingRebalance with old generation 5 (__consumer_offsets-17) (reason: Adding new member rdkafka-67985afa-214a-46e1-b07e-ea797e8d3e3d with group instance id None) (kafka.coordinator.group.GroupCoordinator)

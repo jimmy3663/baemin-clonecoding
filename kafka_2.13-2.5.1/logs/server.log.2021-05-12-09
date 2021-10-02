@@ -1,0 +1,2 @@
+[2021-05-12 09:25:31,061] WARN Unable to read additional data from client sessionid 0x10034e09c160002, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2021-05-12 09:25:44,300] INFO Expiring session 0x10034e09c160002, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)

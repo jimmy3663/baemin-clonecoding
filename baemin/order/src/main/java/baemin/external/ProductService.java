@@ -8,10 +8,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Date;
 
-@FeignClient(name="product", url="http://product:8080")
+@FeignClient(name="product", url="http://localhost:8083")
 public interface ProductService {
-    @RequestMapping(method= RequestMethod.GET, path="/products")
-    public void checkStock(@RequestBody Product product);
 
+    @RequestMapping(method= RequestMethod.GET, path="/products/{Id}")
+    public Product checkStock(@PathVariable Long Id);
+    
+    @RequestMapping(method= RequestMethod.DELETE, path="/products/{Id}")
+    public Product deleteProduct(@PathVariable Long Id);
+    
+    @RequestMapping(method= RequestMethod.POST, path="/products")
+    public void updateStock(@RequestBody Product product);
+    
 }
 
